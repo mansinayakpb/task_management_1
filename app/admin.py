@@ -17,7 +17,6 @@ class CustomUserAdmin(UserAdmin):
     search_fields = ("email", "first_name", "last_name")
 
 
-
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     list_display = ("id", "text", "user")
